@@ -94,7 +94,7 @@ chairBtn.addEventListener("click", () => {
   </div>
   <div class="card-desc">
     <p>
-      Flash Furniture Elon Series White Plastic Chair with Wooden Legs
+     Elon Series White Plastic Chair
     </p>
     <p>Fabric</p>
   </div>
@@ -123,7 +123,7 @@ chairBtn.addEventListener("click", () => {
     <img src="../../images/chair-pink.jpg" alt="" />
   </div>
   <div class="card-desc">
-    <p>HomePop Swoop Arm Living-Room-Chairs</p>
+    <p>HomePop Swoop Arm Chairs</p>
     <p>Fabric</p>
   </div>
   <div class="card-price">
@@ -137,7 +137,7 @@ chairBtn.addEventListener("click", () => {
     <img src="../../images/chair-brown.jpg" alt="" />
   </div>
   <div class="card-desc">
-    <p>BOGUANG Velvet Tufted Wingback Chair</p>
+    <p>Velvet Tufted Wingback Chair</p>
     <p>Fabric</p>
   </div>
   <div class="card-price">
@@ -151,7 +151,7 @@ chairBtn.addEventListener("click", () => {
     <img src="../../images/chair-dark.jpg" alt="" />
   </div>
   <div class="card-desc">
-    <p>CangLong , Modern Mid-Century Side Chair</p>
+    <p>Modern Mid-Century Side Chair</p>
     <p>Fabric</p>
   </div>
   <div class="card-price">
