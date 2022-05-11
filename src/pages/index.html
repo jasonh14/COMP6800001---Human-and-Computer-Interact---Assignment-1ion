@@ -7,31 +7,37 @@
     <title>Furniture</title>
     <link rel="stylesheet" href="../styles/styles.css" />
     <script defer src="../script/index.js"></script>
+    <!-- FontAwesome Icon -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    />
   </head>
   <body>
     <!-- Navbar -->
     <div class="navbar">
       <div><h1>Furniture</h1></div>
       <div class="navbar-item">
-        <a href="#">Home</a>
-        <a href="#">Product</a>
-        <a href="#">Contact Us</a>
-        <a href="#">Location</a>
+        <a href="./index.html">Home</a>
+        <a href="./product.html">Product</a>
+        <a href="./contact.html">Contact Us</a>
+        <a href="./location.html">Location</a>
       </div>
       <div id="navbar-btn" class="burger-icon">
-        <div class="line-1"></div>
-        <div class="line-2"></div>
-        <div class="line-3"></div>
+        <i class="fa-solid fa-bars"></i>
+      </div>
+      <div id="close-btn" class="d-none">
+        <i class="fa-solid fa-xmark"></i>
       </div>
     </div>
     <!-- End Navbar -->
 
     <!-- Navbar-Mobile -->
     <div class="navbar-mobile d-none">
-      <a href="#">Home</a>
-      <a href="#">Product</a>
-      <a href="#">Contact Us</a>
-      <a href="#">Location</a>
+      <a href="./index.html">Home</a>
+      <a href="./product.html">Product</a>
+      <a href="./contact.html">Contact Us</a>
+      <a href="./location.html">Location</a>
     </div>
     <!-- End Navbar-Mobile -->
 
@@ -63,11 +69,13 @@
     <!-- End Hero -->
 
     <!-- Why Us Section -->
+
     <div class="why-section">
       <div class="why-title">
         <h1 class="header-size">Why Our <span>Furniture?</span></h1>
       </div>
       <div class="why-1">
+        <i class="fa-solid fa-coins"></i>
         <h1 class="header-size">Affordable Price</h1>
         <p class="why-desc">
           Looking for cheap and affordable furniture stores that deliver? We got
@@ -76,6 +84,7 @@
         </p>
       </div>
       <div class="why-2">
+        <i class="fa-solid fa-thumbs-up"></i>
         <h1 class="header-size">High Quality</h1>
         <p class="why-desc">
           High quality is the cornerstone of any successful business. Everything
@@ -84,6 +93,7 @@
         </p>
       </div>
       <div class="why-3">
+        <i class="fa-solid fa-check"></i>
         <h1 class="header-size">100% Authentic</h1>
         <p class="why-desc">
           We are absolutely committed to selling ONLY 100% authentic and brand
@@ -113,5 +123,40 @@
       </div>
     </div>
     <!-- End Our Product -->
+
+    <!-- Contact Us -->
+    <div class="contact-us">
+      <h1>Let's Discuss Your Furniture With Us</h1>
+      <p>Discuss Your Dream Furniture With Our Designer</p>
+      <button>Contact Us</button>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+      <p>&copy; 2022 Jason, All rights reserved.</p>
+      <div>
+        <a target="”_blank”" href="https://www.instagram.com/jasonhartantoo/"
+          ><i class="fa-brands fa-instagram"></i
+        ></a>
+
+        <a target="”_blank”" href="https://www.linkedin.com/in/jason-hartanto/">
+          <i class="fa-brands fa-linkedin-in"></i
+        ></a>
+        <a
+          target="”_blank”"
+          href="https://wa.me/6285890503338?text=Hello%20Jason"
+        >
+          <i class="fa-brands fa-whatsapp"></i>
+        </a>
+
+        <a
+          target="”_blank”"
+          href="https://www.youtube.com/channel/UC5gJQq0FVMoORvk9OBGUvAQ"
+        >
+          <i class="fa-brands fa-youtube"></i>
+        </a>
+      </div>
+    </footer>
+    <!-- End Footer -->
   </body>
 </html>

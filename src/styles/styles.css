@@ -20,13 +20,13 @@
 }
 
 .navbar > div > h1 {
-  font-size: clamp(1.2rem, 2vw, 1.5rem);
+  font-size: clamp(1.2rem, 2vw, 1.8rem);
   font-weight: 600;
   color: #a48e6f;
 }
 
 .navbar-item > a {
-  font-size: clamp(0.7rem, 1.4vw, 1rem);
+  font-size: clamp(0.7rem, 1.4vw, 1.3rem);
   padding: 0.5vw 1vw;
   text-decoration: none;
   color: #34383d;
@@ -37,32 +37,16 @@
   color: #a48e6f;
 }
 
+.navbar-mobile {
+  font-weight: 600;
+}
+
 .navbar-mobile a:hover {
   color: #a48e6f;
 }
 
 .burger-icon {
   display: none;
-}
-
-.line-1,
-.line-2,
-.line-3 {
-  width: 6vw;
-  height: 0.6vw;
-  background-color: #34383d;
-  margin: 1.4vw 0;
-  transition: all 0.2s ease;
-}
-
-.clicked .line-1 {
-  transform: translate(0, 7px) rotate(45deg);
-}
-.clicked .line-2 {
-  opacity: 0;
-}
-.clicked .line-3 {
-  transform: translate(0, -7px) rotate(-45deg);
 }
 
 .navbar-mobile {
@@ -80,7 +64,7 @@
 }
 
 .d-none {
-  display: none;
+  display: none !important;
 }
 
 .w-100 {
@@ -143,7 +127,7 @@
 
 .btn {
   padding: 1vw 1.2vw;
-  border-radius: 15px;
+  border-radius: 10px;
   border: none;
   width: 30%;
   background-color: #312d1e;
@@ -184,6 +168,7 @@
 .why-2,
 .why-3 {
   flex: 2;
+  border: 10px;
 }
 
 .why-title span {
@@ -201,6 +186,11 @@
 
 .why-desc {
   font-size: clamp(0.8rem, 1.1vw, 1.5rem);
+}
+
+.why-section i {
+  font-size: clamp(1.6rem, 3vw, 4rem);
+  color: #a48e6f;
 }
 
 .product {
@@ -301,6 +291,154 @@
   color: #312d1e;
 }
 
+.contact-us {
+  padding: 5vw 4vw;
+  text-align: center;
+  background-color: #cfb186;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+}
+
+.contact-us > h1 {
+  color: #312d1e;
+  font-weight: 700;
+  font-size: clamp(1.2rem, 3vw, 2.9rem);
+}
+
+.contact-us > p {
+  font-size: clamp(0.7rem, 2vw, 1.5rem);
+}
+
+.contact-us > button {
+  padding: 5px 1.8vw;
+  background-color: #312d1e;
+  color: #a48e6f;
+  font-weight: 500;
+  font-size: clamp(0.8rem, 1.2vw, 2rem);
+  cursor: pointer;
+  border: 1.5px solid #312d1e;
+  border-radius: 10px;
+  width: 15%;
+}
+
+.contact-us > button:hover {
+  color: #312d1e;
+  background-color: #cfb186;
+}
+
+.product-menu {
+  display: flex;
+  justify-content: center;
+  gap: 2vw;
+  padding: 1.2vw 4vw;
+}
+
+.product-menu p {
+  font-size: clamp(0.7rem, 1.2vw, 2rem);
+  cursor: pointer;
+  opacity: 0.4;
+}
+
+.active {
+  border-bottom: 3px solid #a48e6f;
+  color: #a48e6f;
+  opacity: 1 !important;
+}
+
+.root {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  justify-content: center;
+  gap: 35px;
+  padding: 2vw 25vw;
+}
+
+.card-product {
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 0px 10px 0 rgba(0, 0, 0, 0.1);
+}
+
+.card-img > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  aspect-ratio: 1 / 1;
+}
+
+.card-desc {
+  padding: 1vw;
+}
+
+.card-desc p:first-child {
+  font-weight: 600;
+  font-size: clamp(1rem, 1.2vw, 1.5rem);
+}
+
+.card-desc p:nth-child(2) {
+  opacity: 0.7;
+  font-size: clamp(0.8rem, 1vw, 1.2rem);
+}
+
+.card-price {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 1vw 1vw 1vw;
+  align-items: center;
+}
+
+.card-price > p {
+  color: #a48e6f;
+  font-weight: 600;
+  font-size: clamp(0.8rem, 1vw, 1.2rem);
+}
+
+.card-price > button {
+  padding: 5px 1vw;
+  background-color: #312d1e;
+  color: #a48e6f;
+  font-weight: 500;
+  font-size: clamp(0.8rem, 0.8vw, 1.2rem);
+  cursor: pointer;
+  border: 1.5px solid #312d1e;
+  border-radius: 10px;
+}
+
+.card-price > button:hover {
+  background-color: white;
+  color: #312d1e;
+}
+
+footer {
+  display: flex;
+  align-items: center;
+  padding: 2vw 4vw;
+  background-color: #312d1e;
+  color: white;
+  gap: 20px;
+  justify-content: space-between;
+}
+
+footer i {
+  font-size: clamp(0.8rem, 2.2vw, 4rem);
+  padding: 0 0.5vw;
+  cursor: pointer;
+}
+
+footer p {
+  font-weight: 500;
+  font-size: clamp(0.5rem, 1.2vw, 1.5rem);
+}
+
+footer a {
+  text-decoration: none;
+  color: white;
+}
+
 @media only screen and (max-width: 600px) {
   .navbar-item {
     display: none;
@@ -314,9 +452,9 @@
   }
 
   .btn {
-    padding: 2.2vw 1.5vw;
+    padding: 2.2vw 3vw;
     margin: 3vw 0;
-    width: 35%;
+    width: 50%;
   }
 
   .hero {
@@ -348,5 +486,44 @@
   .btn-seeall {
     margin-top: 0;
     padding: 5px 20px;
+  }
+
+  .contact-us {
+    text-align: start;
+    align-items: flex-start;
+    padding: 20px 4vw;
+  }
+
+  .why-section {
+    gap: 20px;
+  }
+
+  .contact-us > button {
+    width: 40%;
+  }
+
+  .product {
+    padding-bottom: 15px;
+  }
+
+  .card-desc {
+    padding: 1vh;
+  }
+
+  .card-price {
+    padding: 1vh;
+  }
+
+  .product-menu {
+    padding: 2vh;
+    gap: 15px;
+  }
+
+  .root .card-product:last-child {
+    margin-bottom: 20px;
+  }
+
+  .card-price > button {
+    padding: 5px 1vh;
   }
 }
